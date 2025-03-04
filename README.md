@@ -1,17 +1,17 @@
 # nature-and-conflicts
 
-##Goal: 
+<h2>Goal:</h2> 
 
 Develop a predictive model correlating natural disasters (drought, earthquakes, etc.) to the emergence of armed conflicts (or political/economic instability, at the very least).
 
-##References:
+<h2>References:</h2>
 
 We are currently using these documents as references:
  
 - [Understanding Transitory Rainfall Shocks, Economic Growth and Civil Conflict](https://www.nber.org/papers/w16461) 
 - [Climate change in the Fertile Crescent and implications of the recent Syrian drought](https://www.pnas.org/doi/full/10.1073/pnas.1421533112)
 
-##Datasets:
+<h2>Datasets:</h2>
 
 We are currently using these datasets as data sources:
 
