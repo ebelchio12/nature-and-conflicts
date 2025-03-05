@@ -21,5 +21,5 @@ We are currently using these datasets as data sources:
 - [Global Precipitation Climatology Centre (GPCC)](https://psl.noaa.gov/data/gridded/data.gpcc.html)
 - [PLSC 410: Political Protests: Data](https://guides.library.yale.edu/c.php?g=956915&p=6961578)
 - [International Conflict Research](https://icr.ethz.ch/data)
-
+- [Monthly gridded precipitation data](https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.08/cruts.2406270035.v4.08/pre/)
 
