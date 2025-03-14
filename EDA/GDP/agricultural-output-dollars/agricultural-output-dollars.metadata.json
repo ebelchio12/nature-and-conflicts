@@ -1,0 +1,27 @@
+{
+  "chart": {
+    "title": "Agricultural output",
+    "subtitle": "Total agricultural output is the sum of crop and livestock products. It is measured in constant 2015 US$, which means it adjusts for inflation.",
+    "citation": "United States Department for Agriculture (USDA) Economic Research Service",
+    "originalChartUrl": "https://ourworldindata.org/grapher/agricultural-output-dollars?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World"
+    ]
+  },
+  "columns": {
+    "output_quantity": {
+      "titleShort": "Agricultural output",
+      "titleLong": "Agricultural output",
+      "unit": "",
+      "timespan": "",
+      "type": "Integer",
+      "conversionFactor": 1000,
+      "owidVariableId": 247313,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Agricultural output” [dataset]. United States Department for Agriculture (USDA) Economic Research Service [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/247313.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-03-10",
+  "activeFilters": {}
+}

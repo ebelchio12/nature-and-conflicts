@@ -1,0 +1,57 @@
+{
+  "chart": {
+    "title": "Global commodity price index of cereal crops and petroleum",
+    "subtitle": "This price index is measured relative to real prices in 1900 (where 1900 = 100).",
+    "citation": "Jacks (2019)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/commodity-price-index-cereal-crops-and-petroleum?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World"
+    ]
+  },
+  "columns": {
+    "Petroleum": {
+      "titleShort": "Petroleum",
+      "titleLong": "Petroleum",
+      "descriptionKey": [],
+      "unit": "",
+      "timespan": "1860-2020",
+      "type": "Numeric",
+      "owidVariableId": 714465,
+      "shortName": "petroleum",
+      "lastUpdated": "2023-06-07",
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Petroleum” [dataset]. Jacks (2019) [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/714465.metadata.json"
+    },
+    "Wheat": {
+      "titleShort": "Wheat",
+      "titleLong": "Wheat",
+      "descriptionKey": [],
+      "unit": "",
+      "timespan": "1850-2020",
+      "type": "Numeric",
+      "owidVariableId": 714471,
+      "shortName": "wheat",
+      "lastUpdated": "2023-06-07",
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Wheat” [dataset]. Jacks (2019) [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/714471.metadata.json"
+    },
+    "Corn": {
+      "titleShort": "Corn",
+      "titleLong": "Corn",
+      "descriptionKey": [],
+      "unit": "",
+      "timespan": "1850-2020",
+      "type": "Numeric",
+      "owidVariableId": 714464,
+      "shortName": "corn",
+      "lastUpdated": "2023-06-07",
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Corn” [dataset]. Jacks (2019) [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/714464.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-03-10",
+  "activeFilters": {}
+}

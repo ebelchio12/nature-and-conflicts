@@ -1,0 +1,83 @@
+{
+  "chart": {
+    "title": "Agriculture as a share of GDP vs. GDP per capita",
+    "subtitle": "Agriculture includes the cultivation of crops and livestock production, as well as forestry, hunting, and fishing. GDP per capita is adjusted for inflation and for differences in living costs between countries.",
+    "note": "GDP per capita is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices.",
+    "citation": "World Bank and OECD (2025); Data compiled from multiple sources by World Bank (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/value-added-in-the-agricultural-sector-as-of-gdp-vs-gdp-per-capita?v=1&csvType=full&useColumnShortNames=false",
+    "selection": []
+  },
+  "columns": {
+    "Agriculture, forestry, and fishing, value added (% of GDP)": {
+      "titleShort": "Agriculture as a share of GDP",
+      "titleLong": "Agriculture as a share of GDP",
+      "shortUnit": "%",
+      "unit": "% of GDP",
+      "timespan": "1960-2023",
+      "type": "Numeric",
+      "owidVariableId": 1008284,
+      "shortName": "nv_agr_totl_zs",
+      "lastUpdated": "2025-01-24",
+      "nextUpdate": "2026-01-24",
+      "citationShort": "World Bank and OECD (2025) – processed by Our World in Data",
+      "citationLong": "World Bank and OECD (2025) – processed by Our World in Data. “Agriculture as a share of GDP” [dataset]. World Bank and OECD, “World Development Indicators” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1008284.metadata.json"
+    },
+    "GDP per capita, PPP (constant 2021 international $)": {
+      "titleShort": "GDP per capita",
+      "titleLong": "GDP per capita - World Bank – In constant international-$",
+      "descriptionShort": "Average economic output per person in a country or region per year. This data is adjusted for inflation and for differences in living costs between countries.",
+      "descriptionKey": [
+        "Gross domestic product (GDP) is a measure of the total value added from the production of goods and services in a country or region each year. GDP per capita is GDP divided by population.",
+        "This GDP per capita indicator provides information on economic growth and income levels from 1990.",
+        "This data is adjusted for inflation and for differences in living costs between countries.",
+        "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices.",
+        "For GDP per capita estimates in the long run, explore the [Maddison Project Database's indicator](https://ourworldindata.org/grapher/gdp-per-capita-maddison)."
+      ],
+      "shortUnit": "$",
+      "unit": "international-$ in 2021 prices",
+      "timespan": "1990-2023",
+      "type": "Numeric",
+      "owidVariableId": 1008370,
+      "shortName": "ny_gdp_pcap_pp_kd",
+      "lastUpdated": "2025-01-24",
+      "nextUpdate": "2026-01-24",
+      "citationShort": "Data compiled from multiple sources by World Bank (2025) – with minor processing by Our World in Data",
+      "citationLong": "Data compiled from multiple sources by World Bank (2025) – with minor processing by Our World in Data. “GDP per capita – World Bank – In constant international-$” [dataset]. Data compiled from multiple sources by World Bank, “World Development Indicators” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1008370.metadata.json"
+    },
+    "Population (historical)": {
+      "titleShort": "Population (historical)",
+      "titleLong": "Population (historical)",
+      "descriptionShort": "Population by country, available from 10,000 BCE to 2023, based on data and estimates from different sources.",
+      "descriptionProcessing": "The population data is constructed by combining data from multiple sources:\n\n- 10,000 BCE - 1799: Historical estimates by HYDE (v3.3).\n\n- 1800 - 1949: Historical estimates by Gapminder (v7).\n\n- 1950-2023: Population records by the UN World Population Prospects (2024 revision).",
+      "shortUnit": "",
+      "unit": "people",
+      "timespan": "-10000-2023",
+      "type": "Integer",
+      "owidVariableId": 953903,
+      "shortName": "population_historical",
+      "lastUpdated": "2024-07-15",
+      "nextUpdate": "2026-07-15",
+      "citationShort": "HYDE (2023); Gapminder (2022); UN WPP (2024) – with major processing by Our World in Data",
+      "citationLong": "HYDE (2023); Gapminder (2022); UN WPP (2024) – with major processing by Our World in Data. “Population (historical)” [dataset]. PBL Netherlands Environmental Assessment Agency, “History Database of the Global Environment 3.3”; Gapminder, “Population v7”; United Nations, “World Population Prospects”; Gapminder, “Systema Globalis” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/953903.metadata.json"
+    },
+    "World regions according to OWID": {
+      "titleShort": "World regions according to OWID",
+      "titleLong": "World regions according to OWID",
+      "descriptionKey": [],
+      "unit": "",
+      "timespan": "2023-2023",
+      "type": "Continent",
+      "owidVariableId": 900801,
+      "shortName": "owid_region",
+      "lastUpdated": "2023-01-01",
+      "citationShort": "Our World in Data – processed by Our World in Data",
+      "citationLong": "Our World in Data – processed by Our World in Data. “World regions according to OWID” [dataset]. Our World in Data, “Regions” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/900801.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-03-10",
+  "activeFilters": {}
+}
