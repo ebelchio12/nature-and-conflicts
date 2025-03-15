@@ -1,4 +1,5 @@
 import sys
+import numpy as np
 
 import tempfile
 
@@ -22,3 +23,14 @@ class TestWorld:
     def test_create_lookup(self):
         world = World('aux_files/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp')
         world.create_lookup()
+
+    def test_get_grid_points_of_country(self):
+        world = World('aux_files/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp')
+        world.create_lookup()
+
+        res = world.get_grid_points_of_country('IND')
+
+        chosen = world.world_array[res]
+        idx = world.iso_to_idx['IND']
+
+        assert np.all(chosen==idx)

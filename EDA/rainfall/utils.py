@@ -71,12 +71,23 @@ class World:
         self.idx_to_iso = {}
         self.iso_to_idx = {}
         self.world_array = None
+        self.sindex = None
+
+        self.create_sindex()
+
+    def create_sindex(self):
+        self.sindex = self.world.sindex
 
     def get_country_from_shp(self, lon: float, lat: float):
         point = Point(lon, lat)
-        for _, country in self.world.iterrows():
+        
+        possible_matches = list(self.sindex.intersection(point.bounds))
+
+        for idx in possible_matches:
+            country = self.world.iloc[idx]
             if country['geometry'].contains(point):
                 return country
+
         return None
 
     def create_lookup(self, grid_spacing=0.5):
