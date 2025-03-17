@@ -1,0 +1,10 @@
+name: nature-and-conflicts-irem
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - matplotlib >= 3.8
+  - pip >= 24.0
+  - python = 3.12
+  - pip:
+    - -r requirements.txt

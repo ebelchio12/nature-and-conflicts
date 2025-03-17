@@ -1,6 +1,9 @@
 import requests, os, pathlib, shutil
 import zipfile, gzip
 
+import cv2
+import matplotlib.pyplot as plt
+
 import numpy as np
 import pandas as pd
 
@@ -46,6 +49,9 @@ class Rainfall:
             self.end_year = end_year
             if delete_file:
                 os.remove(f"{extract_to}/{filename}")
+                # remove the folder if empty
+                if len(os.listdir(extract_to)) == 0:
+                    os.rmdir(extract_to)
 
         except requests.exceptions.RequestException as e:
             print("Error downloading file: {e}")
@@ -64,6 +70,23 @@ class Rainfall:
         idx = (year - self.start_year)*12 + month
 
         return self.data[idx*sx:(idx+1)*sx,:]
+
+    def plot_month(self, month: int, year: int):
+        data = self.get_month(month, year)
+
+        rotated = cv2.rotate(data.T, cv2.ROTATE_90_COUNTERCLOCKWISE)
+        fig, ax = plt.subplots(figsize=(12,6))
+        ax.imshow(rotated)
+        ax.set(xticks=np.arange(0, 720, 40),
+               xticklabels=np.arange(-180, 180, 20))
+        ax.set(yticks=np.arange(0, 360, 20),
+               yticklabels=np.arange(90, -90, -10))
+
+        ax.set_xlabel('Lattitude')
+        ax.set_ylabel('Longitude')
+        ax.axhline(180, color='red', linestyle='dashed')
+        ax.axvline(360, color='red', linestyle='dashed')
+        return ax
 
 class World:
     def __init__(self, shape_file):
