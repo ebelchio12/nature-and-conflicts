@@ -314,6 +314,7 @@ class CsvFetcher:
         if not os.path.isdir(extract_to):
             os.mkdir(extract_to)
 
+        # TODO: more detailed error handling (e.g. check url first)
         try:
             response = requests.get(self.url)
             response.raise_for_status()
