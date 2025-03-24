@@ -281,3 +281,55 @@ class World:
 
         idx = self.iso_to_idx[iso_code]
         return np.where(self.world_array == idx)
+    
+def diff(arr, lag=0):
+    """
+    For calculating Delta R_{i,t}. Here, if lag is nonzero, we consider
+    Delta R_{i,t-lag}.
+    """
+    if lag >= len(arr)-1:
+        raise ValueError(f'Lag:{lag} and length of array:{len(arr)}.')
+
+    arr = np.array(arr)
+    arr_t = arr[1:]
+    arr_t_1 = arr[:-1]
+
+    res = (arr_t - arr_t_1)/(arr_t_1)
+    if lag == 0:
+        return res
+    return res[:-lag]
+    
+class CsvFetcher:
+    def __init__(self, url):
+        self.url = url
+        
+    def fetch(self, file_name='temp.csv', extract_to='data', delete_file=True):
+        """
+        TODO: refactor (because it rewrites a lot of the functionality of the Rainfall
+        fetcher).
+        """
+        if extract_to.endswith('/'):
+            extract_to = extract_to[:-1]
+
+        if not os.path.isdir(extract_to):
+            os.mkdir(extract_to)
+
+        try:
+            response = requests.get(self.url)
+            response.raise_for_status()
+
+            with open(f"{extract_to}/{file_name}", 'wb') as file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    file.write(chunk)
+
+            data_frame = pd.read_csv(f"{extract_to}/{file_name}")
+
+            if delete_file:
+                os.remove(f"{extract_to}/{file_name}")
+                if len(os.listdir(extract_to)) == 0:
+                    os.rmdir(extract_to)
+            return data_frame
+        except requests.exceptions.RequestException as e:
+            print("Error downloading file: {e}")
+            raise e
+        
