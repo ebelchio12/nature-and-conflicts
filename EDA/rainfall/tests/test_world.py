@@ -6,7 +6,7 @@ import tempfile
 sys.path.insert(0, '.')
 sys.path.insert(1, '..')
 
-from utils import World
+from world import World
 
 class TestWorld:
     def test_init(self):

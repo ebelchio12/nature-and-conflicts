@@ -6,7 +6,7 @@ import pytest, requests
 sys.path.insert(0, '.')
 sys.path.insert(1, '..')
 
-from utils import CsvFetcher
+from csv_fetcher import CsvFetcher
 
 class TestCsvFetcher:
     def test_init(self):

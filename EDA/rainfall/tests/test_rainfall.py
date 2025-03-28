@@ -5,7 +5,7 @@ import tempfile
 sys.path.insert(0, '.')
 sys.path.insert(1, '..')
 
-from utils import Rainfall
+from grid_data import Rainfall
 
 class TestRainfall:
     def test_init(self):
