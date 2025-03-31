@@ -133,6 +133,24 @@ class GridData:
 
         return t, dates, averages
     
+    def get_country_annual_avg(self, year_range, iso_code, world):
+        t = []
+        years = []
+        averages = []
+        ct = 0
+
+        for year in range(year_range[0], year_range[1] + 1):
+            annual = []
+            for month in range(1, 13):
+                avg = self.get_country_avg_at_time(month, year, iso_code, world)
+                annual.append(avg)
+            averages.append(np.mean(annual))
+            t.append(ct)
+            ct += 1
+            years.append(year)
+
+        return t, years, averages
+    
 
 class Rainfall(GridData):
     """
