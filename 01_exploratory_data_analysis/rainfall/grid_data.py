@@ -107,7 +107,9 @@ class GridData:
         """
         data = self.get_month(month, year)
         idx = world.get_grid_points_of_country(iso_code)
-        return np.mean(data[idx])
+        vals = data[idx]
+        idx2 = np.where(vals != -999)
+        return np.mean(vals[idx2])
     
     def get_country_avg(self, month_range, year_range, iso_code, world):
         t = []
