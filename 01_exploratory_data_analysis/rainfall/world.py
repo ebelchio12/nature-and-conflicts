@@ -86,3 +86,13 @@ class World:
 
         idx = self.iso_to_idx[iso_code]
         return np.where(self.world_array == idx)
+    
+    def change_iso_code(self, change_dict):
+        """
+        Change the ISO3 codes as necessary, if the shp file doesn't have the right ones.
+        """
+        for old_code, new_code in change_dict.items():
+            self.iso_to_idx[new_code] = self.iso_to_idx[old_code]
+            del self.iso_to_idx[old_code]
+            idx = self.iso_to_idx[new_code]
+            self.idx_to_iso[idx] = new_code
