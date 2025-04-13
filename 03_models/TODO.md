@@ -3,7 +3,7 @@
 ### 1. Rainfall -> GDP change :white_check_mark:
 Irem will tidy this up.
 
-### 1b. Rainfall + temperature rise -> GDP change
+### 1b. Rainfall + temperature rise -> GDP change :white_check_mark:
 (Irem)
 
 ### 1c. Rainfall after separating based on mean temperature
