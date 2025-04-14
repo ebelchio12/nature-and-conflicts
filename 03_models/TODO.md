@@ -80,6 +80,8 @@ Estimators:
 Hypothesis: the number of protests are actually higher when the democracy index is higher (because people are less repressed?). Or at least it's a nonmonotonic relationship?
 
 Features:
+- rainfall variation
+- percent agriculture
 - democracy index
 - gdp
 - gdp_g
