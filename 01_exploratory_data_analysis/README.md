@@ -1,7 +1,7 @@
 ## Exploratory Data Analysis
 
 This folder contains a few Jupyter notebooks and other Python scripts to fetch, clean, and merge data for downstream analysis. This is done in four different broad categories:
-- Rainfall (rainfall, surface temperatures, GDP, )
+- Rainfall (rainfall, surface temperatures, GDP, Oil rent, Percent GDP from agriculture, etc.)
 - GDP (agricultural output, prices, unemployment, etc.)
 - Demonstrations (datasets containing public demonstrations around the globe)
 - Agriculture Surface Temp (more agriculture and surface temperature data)
