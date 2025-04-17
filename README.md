@@ -2,24 +2,20 @@
 
 <h2>Goal:</h2> 
 
-Develop a predictive model correlating natural disasters (drought, earthquakes, etc.) to the emergence of armed conflicts (or political/economic instability, at the very least).
+Develop a predictive model correlating climate and economic factors to the emergence of civil unrests (protests).
 
 <h2>References:</h2>
 
 We are currently using these documents as references:
  
-- [Understanding Transitory Rainfall Shocks, Economic Growth and Civil Conflict](https://www.nber.org/papers/w16461) 
+- [Economic Shocks and Civil Conflict: An Instrumental Variables Approach]([https://www.nber.org/papers/w16461](https://www.jstor.org/stable/10.1086/421174?seq=1)) 
 - [Climate change in the Fertile Crescent and implications of the recent Syrian drought](https://www.pnas.org/doi/full/10.1073/pnas.1421533112)
 
 <h2>Datasets:</h2>
 
-We are currently using these datasets as data sources:
+We used these datasets as data sources:
 
-- [Crowd Counting Consortium](https://ash.harvard.edu/programs/crowd-counting-consortium/)
-- [FARPO](https://farpo.eu/data/)
-- [EARTHDATA NASA](https://search.earthdata.nasa.gov/search?g=G1627839617-GES_DISC&q=precipitation&lat=0.5625&long=1.125&zoom=0)
-- [Global Precipitation Climatology Centre (GPCC)](https://psl.noaa.gov/data/gridded/data.gpcc.html)
-- [PLSC 410: Political Protests: Data](https://guides.library.yale.edu/c.php?g=956915&p=6961578)
-- [International Conflict Research](https://icr.ethz.ch/data)
-- [Monthly gridded precipitation data](https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.08/cruts.2406270035.v4.08/pre/)
-
+- Protest data: from this compilation by [Yale](https://guides.library.yale.edu/c.php?g=956915&p=6961578)
+- Agriculture outputs, economic factors: [ourworld in data](https://ourworldindata.org/)
+- Rainfall data: [CRU TS datasets](https://crudata.uea.ac.uk/cru/data/hrg/)
+- Ethnic fractionalization index: [EUI Research Repository](https://cadmus.eui.eu/handle/1814/68317)
