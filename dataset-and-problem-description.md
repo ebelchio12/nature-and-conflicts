@@ -16,7 +16,8 @@ Through these models, we aim to provide tools that may be of interest to policym
 
 Q: Can we predict the incidence of protests in several regions in the world using climate and economic data?
 KPI:
-* Predict within a 70% accuracy incidence of protests in several regions in the world (e.g., Western nations, sub-sharan Africa, Southeast Asia) compared with historic data
+* Replicate models from paper above to predict GDP variations and number of protests with competitive R2 value as the paper (R2=0.2) 
+* Predict protest incidences (whether protests happen or not) within a 70% accuracy, recall of >80% and false negative rate of 5%
 * Create a user dashboard where users can get estimates for likelihood of protests given climate and economic data
 
 <h3>General plan:</h3>  
@@ -32,9 +33,9 @@ KPI:
 <h3>Datasets:</h3>  
 
 * Protest data: from this compilation by [Yale](https://guides.library.yale.edu/c.php?g=956915&p=6961578)
-* Agriculture outputs, commodity prices: [ourworld in data](https://ourworldindata.org/)
-* Rainfall data
-* [Food prices data in the US](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-average-price-data.htm)
+* Agriculture outputs, economic factors: [ourworld in data](https://ourworldindata.org/)
+* Rainfall data: [CRU TS datasets](https://crudata.uea.ac.uk/cru/data/hrg/)
+* Ethnic fractionalization index: [EUI Research Repository](https://cadmus.eui.eu/handle/1814/68317)
 
 
 
