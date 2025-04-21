@@ -16,7 +16,7 @@ Through these models, we aim to provide tools that may be of interest to policym
 
 Q: Can we predict the incidence of protests in several regions in the world using climate and economic data?
 KPI:
-* Replicate models from paper above to predict GDP variations and number of protests with competitive $R^2$ value as the paper ($R^2\sim O(0.01-0.1)$) 
+* Replicate models from paper above to predict GDP variations and number of protests with competitive $R^2$ value as the paper ( $$R^2\sim O(0.01-0.1)$$ ) 
 * Predict protest incidences (whether protests happen or not) within a 70% accuracy, recall of >80% and false negative rate of 5%
 * Create a user dashboard where users can get estimates for likelihood of protests given climate and economic data
 
@@ -32,7 +32,6 @@ KPI:
   * Start with simple linear regression
   * Examine whether time series analysis is appropriate
   * Classify countries with a high number of protests, given natural and economic predictors
-* Create user dashboard
     
 <h3>Datasets:</h3>  
 
