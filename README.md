@@ -15,7 +15,7 @@ We are currently using these documents as references:
 
 We used these datasets as data sources:
 
-- Protest data: from this compilation by [Harvard Dataverse]([https://guides.library.yale.edu/c.php?g=956915&p=6961578](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HTTWYL))
+- Protest data: from this compilation by [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HTTWYL)
 - Agriculture outputs, economic factors: [ourworld in data](https://ourworldindata.org/)
 - Rainfall data: [CRU TS datasets](https://crudata.uea.ac.uk/cru/data/hrg/)
 - Ethnic fractionalization index: [EUI Research Repository](https://cadmus.eui.eu/handle/1814/68317)
